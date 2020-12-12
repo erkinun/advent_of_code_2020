@@ -47,6 +47,7 @@
               2 (recur one-jolts three-jolts (rest as) result)
               3 (recur one-jolts (inc three-jolts) (rest as) result))))))))
 
+;; TODO maybe memoize here for next steps?
 (defn create-new-paths [adapters path]
   (let [jolt (last path)]
     (loop [steps     [1 2 3]
