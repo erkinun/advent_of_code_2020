@@ -51,11 +51,11 @@
   (swap! state start-number! 3)
   (swap! state start-number! 6)
   (swap! state last-number!)
-  (:last (play-until 2020 test-start-nums))
+  (:last (play-until 30000000 test-start-nums))
   (:last (play-until 2020 [1,3,2]))
   (:last (play-until 2020 [2,1,3]))
   (:last (play-until 2020 [1,2,3]))
   (:last (play-until 2020 [3,1,2]))
-  (:last (play-until 2020 [15,12,0,14,3,1]))
+  (:last (play-until 30000000 [15,12,0,14,3,1]))
   @state
   )
